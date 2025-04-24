@@ -1,0 +1,56 @@
+# hardware/*
+# hardware/dice_roller/*
+# !hardware/dice_roller.tcl
+# !hardware/constraint
+# Ignore Vivado-generated folders
+# Ignore Vivado build artifacts
+**/*.pb
+**/*.dcp
+**/*.vds
+**/*.rpt
+**/*.wdf
+**/*.xml
+**/*.sh
+**/*.bat
+**/*.js
+**/*.tcl
+**/.Xil/
+**/.Vivado_*/       # Queue/cache metadata
+**/.Xil/**
+**/*.log
+**/*.jou
+**/*.str
+**/*.html
+**/__synthesis_is_complete__
+**/vivado.begin.rst
+**/vivado.end.rst
+**/.Xil/
+**/*.xpr
+**/*_synth_*
+**/*_impl_*
+
+# Ignore all Vivado-generated folders
+**/*.runs/
+**/.runs/
+**/*.ip_user_files/
+**/ip_user_files/
+**/.cache/
+.cache/
+.sim/
+.hw/
+
+# Don't ignore your real source files
+hardware/dice_roller/dice_roller.cache/*
+hardware/dice_roller/dice_roller.hw/*
+hardware/dice_roller/dice_roller.srcs/*
+!hardware/*.v
+!hardware/dice_roller_top.v
+!hardware/ssd_driver.v
+!hardware/dice_roller.v
+!dice_roller.tcl
+!contraints/zyboZ7-10.xdc
+
+# Optional system junk
+*~
+*.swp
+.DS_Store
