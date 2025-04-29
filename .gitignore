@@ -1,7 +1,3 @@
-# hardware/*
-# hardware/dice_roller/*
-# !hardware/dice_roller.tcl
-# !hardware/constraint
 # Ignore Vivado-generated folders
 # Ignore Vivado build artifacts
 **/*.pb
@@ -29,7 +25,7 @@
 **/*_synth_*
 **/*_impl_*
 
-# Ignore all Vivado-generated folders
+# Ignore Vivado-generated folders
 **/*.runs/
 **/.runs/
 **/*.ip_user_files/
@@ -38,8 +34,11 @@
 .cache/
 .sim/
 .hw/
+*~
+*.swp
+.DS_Store
 
-# Don't ignore your real source files
+# Keeping source files only
 hardware/dice_roller/dice_roller.cache/*
 hardware/dice_roller/dice_roller.hw/*
 hardware/dice_roller/dice_roller.srcs/*
@@ -50,7 +49,4 @@ hardware/dice_roller/dice_roller.srcs/*
 !dice_roller.tcl
 !contraints/zyboZ7-10.xdc
 
-# Optional system junk
-*~
-*.swp
-.DS_Store
+

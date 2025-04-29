@@ -39,3 +39,7 @@ An LFSR (Linear Feedback Shift Register) is a hardware method to generate a sequ
 - A 4-bit LFSR** is used.
 - The value is modulo 6 (`% 6`) and offset by 1** to map into the range `[1, 6]`, representing a fair D6 roll.
 
+## To do
+1. Add pictures
+2. Create video 
+3. Add button debouncer
